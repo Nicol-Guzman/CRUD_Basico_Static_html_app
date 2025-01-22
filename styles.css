@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #424c55;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #424c55;
+    text-transform: uppercase;
+}
+
+hr {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #f7accf;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid 1px #fff;
+    box-shadow: 0 0 10px rgba(108, 13, 68, 0.40);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    background: #a5ffd6;
+    color: #424c55;
+    border: solid 1px #fff;
+    border-radius: 8px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.textArea01 {
+    text-align: left;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addTaskBtn {
+    background-color: #424c55;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #b9314f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #a5ffd6;
+    color: #424c55;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li button.delete {
+    background-color: #424c55;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+li button.delete:hover {
+    background-color: #b9314f;
+}
+
+li button.edit {
+    background-color: #424c55;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+li button.edit:hover {
+    background-color: #b9314f;
+}
+
+.instructions {
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f7accf;
+}
+
+@media (max-width: 890px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 350px;
+    }
+}
